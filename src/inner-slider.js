@@ -416,10 +416,6 @@ export class InnerSlider extends React.Component {
     }
   };
   clickHandler = e => {
-    if (this.clickable === false) {
-      e.stopPropagation();
-      e.preventDefault();
-    }
     this.clickable = true;
   };
   keyHandler = e => {
